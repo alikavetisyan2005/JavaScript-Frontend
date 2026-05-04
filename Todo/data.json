@@ -1,0 +1,35 @@
+{
+  "todos": [
+    {
+      "id": "102",
+      "text": "eat a breakfast",
+      "completed": true
+    },
+    {
+      "id": "103",
+      "text": "do js tasks",
+      "completed": true
+    },
+    {
+      "id": "8wi93j9xO9c",
+      "text": "node tasks",
+      "completed": false
+    },
+    {
+      "id": "Q5Xdv7VL9R8",
+      "text": "go to tennis padel",
+      "completed": false
+    },
+    {
+      "id": "IyDmp2_Hq7k",
+      "text": "watch a movie",
+      "completed": true
+    },
+    {
+      "id": "XwQSz6yfahU",
+      "text": "watch football",
+      "completed": true
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
