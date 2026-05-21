@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "price": 10.99,
+      "photo": "https://i0.wp.com/americanwritersmuseum.org/wp-content/uploads/2018/02/CK-3.jpg?resize=267%2C400&ssl=1"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "price": "12.99",
+      "photo": "https://www.penguin.co.uk/_next/image?url=https%3A%2F%2Fcdn.penguin.co.uk%2Fdam-assets%2Fbooks%2F9780141036144%2F9780141036144-jacket-large.jpg&w=614&q=100",
+      "description": "",
+      "id": "2"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "price": "13",
+      "photo": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1612238791i/56916837.jpg",
+      "description": "",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "price": 8.99,
+      "photo": "https://m.media-amazon.com/images/I/71CvWDPcVEL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "5",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "price": 11.5,
+      "photo": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1398034300i/5107.jpg"
+    },
+    {
+      "id": "6",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "price": 14.25,
+      "photo": "https://m.media-amazon.com/images/I/712cDO7d73L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "8",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "price": 9.99,
+      "photo": "https://m.media-amazon.com/images/I/617lxveUjYL.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "price": 13,
+      "photo": "https://m.media-amazon.com/images/I/61RmfGsyCrL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "10",
+      "title": "The Little Prince",
+      "author": "Antoine de Saint-Exupéry",
+      "price": 7.95,
+      "photo": "https://m.media-amazon.com/images/I/71NsO7LVa3L._AC_UF1000,1000_QL80_DpWeblab_.jpg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
