@@ -6,8 +6,9 @@ import { AuthLayout } from "../pages/auth/authLayout";
 import { Settings } from "../pages/auth/settings";
 import { Followers } from "../pages/auth/followers";
 import { Followings } from "../pages/auth/followings";
-import { Posts } from "../pages/auth/posts";
 import { Messages } from "../pages/auth/messages";
+import { Search } from "../pages/auth/search";
+import { UserPage } from "../pages/auth/UserPage";
 
 export const routes = createBrowserRouter([
     {path: "", element: <Signin/>},
@@ -18,8 +19,9 @@ export const routes = createBrowserRouter([
             {path: "settings", element: <Settings/>},
             {path: "followers", element: <Followers/>},
             {path: "followings", element: <Followings/>},
-            {path: "posts", element: <Posts/>},
-            {path: "messages", element: <Messages/>}
+            {path: "search", element: <Search/>},
+            {path: "messages", element: <Messages/>},
+            {path: "view/:username", element: <UserPage/>}
         ]
     },
 

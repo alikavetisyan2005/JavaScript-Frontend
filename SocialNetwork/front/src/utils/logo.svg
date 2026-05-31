@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" width="100%" height="100%">
+  <defs>
+    <!-- Vibrant gradient for a modern tech/social feel -->
+    <linearGradient id="kivoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF" />
+      <stop offset="50%" stop-color="#7000FF" />
+      <stop offset="100%" stop-color="#FF007A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background (Optional, transparent by default, change to #000 if dark mode is preferred) -->
+  <rect width="100%" height="100%" fill="none"/>
+
+  <g transform="translate(20, 15)">
+    <!-- Connected 'K' Loop Icon -->
+    <path d="M 40 10 
+             C 25 10, 15 22, 15 40 
+             L 15 80 
+             C 15 98, 25 110, 40 110 
+             C 55 110, 65 98, 65 80 
+             L 65 65 
+             L 95 95 
+             C 105 105, 120 105, 130 95 
+             C 140 85, 140 70, 130 60 
+             L 105 35 
+             L 130 10 
+             C 138 2, 134 -10, 120 -10 
+             C 110 -10, 102 -2, 95 5 
+             L 65 35 
+             L 65 40 
+             C 65 22, 55 10, 40 10 Z" 
+          fill="url(#kivoGrad)" />
+          
+    <!-- Decorative Intersection Node to emphasize 'Connection' -->
+    <circle cx="65" cy="50" r="10" fill="#FFFFFF" opacity="0.3" />
+  </g>
+
+  <!-- Typography -->
+  <text x="180" y="95" 
+        font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" 
+        font-size="76" 
+        font-weight="800" 
+        letter-spacing="-2" 
+        fill="#111111">kivo</text>
+
+  <!-- Small dot to anchor the brand name -->
+  <circle cx="345" cy="82" r="8" fill="url(#kivoGrad)" />
+</svg>

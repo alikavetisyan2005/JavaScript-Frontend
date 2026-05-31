@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { Http } from "../../../config/api";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 
 type ChangePasswordForm = {
@@ -11,6 +11,15 @@ type ChangePasswordForm = {
 export const ChangePassword = () => {
   const [done, setDone] = useState("");
   const [error, setError] = useState("");
+  const sectionRef = useRef<HTMLElement | null>(null);
+
+  useEffect(() => {
+    sectionRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  }, []);
 
   const {
     register,
@@ -19,6 +28,8 @@ export const ChangePassword = () => {
   } = useForm<ChangePasswordForm>();
 
   const onSubmit = (data: ChangePasswordForm) => {
+    setError("");
+
     Http.patch("/account/settings/password", {
       currentPassword: data.currentPassword,
       newPassword: data.newPassword,
@@ -37,7 +48,10 @@ export const ChangePassword = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <section className="rounded-[32px] border border-white/10 bg-slate-950/80 p-8 shadow-[0_25px_60px_-35px_rgba(15,23,42,0.8)] backdrop-blur-xl">
+      <section
+        ref={sectionRef}
+        className="rounded-[32px] border border-white/10 bg-slate-950/80 p-8 shadow-[0_25px_60px_-35px_rgba(15,23,42,0.8)] backdrop-blur-xl"
+      >
         <div className="flex flex-col gap-4">
           <div>
             <p className="text-xs uppercase tracking-[0.35em] text-slate-400/80">
