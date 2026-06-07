@@ -1,11 +1,11 @@
-import type { ImgHTMLAttributes } from "react"
-type Props = ImgHTMLAttributes<HTMLImageElement>
-export const Image = ({src, alt ,...otherProps}: Props) => {
-    return (
-        <img
-        src={src}
-        alt={alt}
-        {...otherProps}
-        />
-    )
-}
+import type { ImgHTMLAttributes } from "react";
+import { BASE } from "../helpers/constants";
+type Props = ImgHTMLAttributes<HTMLImageElement>;
+
+
+export const Image = ({ src, alt, ...otherProps }: Props) => {
+    const baseURL = BASE + src
+
+  return <img src={baseURL} alt={alt} {...otherProps} />;
+};
+

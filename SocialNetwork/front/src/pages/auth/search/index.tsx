@@ -2,8 +2,10 @@ import { useEffect, useState, type FormEvent } from "react";
 import { Http } from "../../../config/api";
 import type { Account } from "../../../helpers/types";
 import { Image } from "../../../components/Image";
-import icon from "../../../utils/icon-7797704_640.png";
 import { Link } from "react-router-dom";
+import { icon } from "../../../helpers/constants";
+
+
 
 export const Search = () => {
   const [username, setUsername] = useState("");

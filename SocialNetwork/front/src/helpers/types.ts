@@ -5,7 +5,9 @@ export interface User {
   password: string;
 }
 
-export interface Follower {}
+export interface Follower {
+  
+}
 
 export interface Posts {
   id: number;
@@ -31,4 +33,13 @@ export interface Account extends User {
 export interface Context {
   user: Account;
   setUser: (user: Account) => void;
+}
+
+
+export const Base = "http:/localhost/4002/"
+
+export type ReturnValue = {
+  followStatus: boolean,
+  followsMe: boolean,
+  requestSent: boolean
 }

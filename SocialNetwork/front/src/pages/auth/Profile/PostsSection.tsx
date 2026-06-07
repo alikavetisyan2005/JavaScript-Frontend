@@ -18,8 +18,9 @@ export const PostsSection = () => {
 
   const handleDelete = (id: number) => {
     Http.delete(`/posts/${id}`)
-      .then(() => {setDone("Post deleted successfully")
-        refetch();
+      .then(() => {
+        setDone("Post deleted successfully")
+        
       })
       .catch((err) => {
         if (axios.isAxiosError(err)) {
@@ -46,6 +47,7 @@ export const PostsSection = () => {
 
       {posts.length > 0 ? (
         <div className="mt-8 grid gap-5 lg:grid-cols-2">
+
           {posts.map((post) => (
             <article
               key={post.id}

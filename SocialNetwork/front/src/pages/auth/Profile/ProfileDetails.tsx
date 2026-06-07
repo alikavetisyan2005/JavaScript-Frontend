@@ -1,10 +1,10 @@
 import { Link, useOutletContext } from "react-router-dom";
 import type { Context } from "../../../helpers/types";
-import icon from "../../../utils/icon-7797704_640.png";
 import { Image } from "../../../components/Image";
 import { useState } from "react";
 import type { ChangeEvent } from "react";
 import { Http } from "../../../config/api";
+import { icon } from "../../../helpers/constants";
 
 export const ProfileDetails = () => {
   const { user, setUser } = useOutletContext<Context>();
@@ -22,10 +22,8 @@ export const ProfileDetails = () => {
       formData.append("profile-pic", file);
 
       const res = await Http.patch("/account/avatar", formData);
-      const {picture} = res.data;
-      console.log(res.data);
-      console.log(user.avatar);
-      setUser({ ...user, avatar: picture });
+      console.log(user.avatar)
+      setUser({ ...user, avatar: user.avatar });
     } catch (err) {
       console.log(err);
       setError("something went wrong...");
