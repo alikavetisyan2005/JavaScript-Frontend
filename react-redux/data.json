@@ -1,0 +1,119 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Alik",
+      "age": 20,
+      "salary": 15000
+    },
+    {
+      "id": "2",
+      "name": "Mira",
+      "age": 25,
+      "salary": 2500
+    },
+    {
+      "id": "6",
+      "name": "Sara",
+      "age": 23,
+      "salary": 1800
+    },
+    {
+      "id": "8",
+      "name": "Nina",
+      "age": 22,
+      "salary": 1700
+    },
+    {
+      "id": "10",
+      "name": "Zoe",
+      "age": 29,
+      "salary": 2400
+    },
+    {
+      "id": "11",
+      "name": "Ivan",
+      "age": 33,
+      "salary": 2800
+    },
+    {
+      "id": "12",
+      "name": "Maya",
+      "age": 26,
+      "salary": 2100
+    },
+    {
+      "id": "13",
+      "name": "Liam",
+      "age": 24,
+      "salary": 1900
+    },
+    {
+      "id": "14",
+      "name": "Emma",
+      "age": 32,
+      "salary": 2700
+    },
+    {
+      "id": "15",
+      "name": "Noah",
+      "age": 34,
+      "salary": 2900
+    },
+    {
+      "id": "16",
+      "name": "Ava",
+      "age": 21,
+      "salary": 1650
+    },
+    {
+      "id": "17",
+      "name": "Ethan",
+      "age": 36,
+      "salary": 3100
+    },
+    {
+      "id": "18",
+      "name": "Olivia",
+      "age": 27,
+      "salary": 2050
+    },
+    {
+      "id": "19",
+      "name": "Mason",
+      "age": 30,
+      "salary": 2500
+    },
+    {
+      "id": "20",
+      "name": "Sophia",
+      "age": 28,
+      "salary": 2300
+    },
+    {
+      "id": "21",
+      "name": "Lucas",
+      "age": 29,
+      "salary": 2350
+    },
+    {
+      "name": "Emul",
+      "age": "27",
+      "salary": "1234",
+      "id": "fqGXiqEKx7A"
+    },
+    {
+      "name": "Marat",
+      "age": "28",
+      "salary": "1000",
+      "id": "0C5roocDkRo"
+    },
+    {
+      "name": "Emulik",
+      "age": "27",
+      "salary": "1300",
+      "id": "6A8k8fbpglI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
